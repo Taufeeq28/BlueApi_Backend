@@ -1,4 +1,5 @@
 using BlueApi_Backend.Data;
+using BlueApi_Backend.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,10 +11,22 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<ApplicationDbContext>(option => {
-    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection"));
+
+
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//{
+  //  options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection"), sqlServerOptions =>
+    //{
+     //   sqlServerOptions.CommandTimeout(60); // Adjust the timeout value as needed (e.g., 60 seconds)
+    //});
+//});
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultSQLConnection"));
 });
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
 var app = builder.Build();
 
