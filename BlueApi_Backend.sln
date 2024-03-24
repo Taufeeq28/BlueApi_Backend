@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueApi_Backend", "BlueApi_Backend\BlueApi_Backend.csproj", "{8A2D1B9F-0EAB-4A76-8F64-31889DB72214}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A2D1B9F-0EAB-4A76-8F64-31889DB72214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2D1B9F-0EAB-4A76-8F64-31889DB72214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2D1B9F-0EAB-4A76-8F64-31889DB72214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2D1B9F-0EAB-4A76-8F64-31889DB72214}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B2420F4-7B47-4482-9746-8687823F7FCF}
+	EndGlobalSection
+EndGlobal
