@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using Microsoft.EntityFrameworkCore;
 using static System.Net.Mime.MediaTypeNames;
+using BlueApi_Backend.Models.Dto;
 
 namespace BlueApi_Backend.Controllers
 {

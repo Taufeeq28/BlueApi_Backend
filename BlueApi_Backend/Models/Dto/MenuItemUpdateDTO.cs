@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BlueApi_Backend.Models
+namespace BlueApi_Backend.Models.Dto
 {
     public class MenuItemUpdateDTO
     {
